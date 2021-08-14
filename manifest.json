@@ -1,0 +1,55 @@
+{
+  "background_color": "#0392cf",
+  "theme_color": "#0392cf",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "tr-TR",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/ss1.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss2.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss3.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss4.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss5.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    }
+  ],
+  "name": "KoopKit - Kooperatif Destek Kiti",
+  "short_name": "KoopKit",
+  "description": "KoopKit ile müşteri, ürün, personel ve stok takibi artık çok kolay.",
+  "start_url": "index.html?launcher=true"
+}
