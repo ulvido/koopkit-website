@@ -44,7 +44,7 @@ self.addEventListener("activate", e => {
   e.waitUntil(validateCache());
   console.log("[Service Worker] Validate Cache Completed ✓");
   /** When a service worker is initially registered, 
-   * pages won't use it until they next load. 
+   * pages won"t use it until they next load. 
    * The claim() method causes those pages to be controlled immediately. 
    */
   e.waitUntil(self.clients.claim());
@@ -71,4 +71,27 @@ self.addEventListener("fetch", (e) => {
 
   e.respondWith(fetchResponder())
   console.log("[Service Worker] Fetch Completed ✓");
+});
+
+// NOTIFICATIONS
+// notification cancelled
+self.addEventListener("notificationclose", e => {
+  let { notification } = e;
+  let primaryKey = notification.data.primaryKey;
+
+  console.log("Closed notification: " + primaryKey);
+});
+
+// notification action
+self.addEventListener("notificationclick", function (e) {
+  let { notification, action } = e;
+  let primaryKey = notification.data.primaryKey;
+
+  if (action === "close") {
+    console.log("Closed tapped: " + primaryKey);
+    notification.close();
+  } else {
+    clients.openWindow("http://www.example.com");
+    notification.close();
+  }
 });
