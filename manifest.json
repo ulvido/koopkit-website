@@ -48,7 +48,7 @@
       "type": "image/png"
     }
   ],
-  "name": "KoopKit - Kooperatif Destek Kiti",
+  "name": "KoopKit",
   "short_name": "KoopKit",
   "description": "KoopKit ile müşteri, ürün, personel ve stok takibi artık çok kolay.",
   "start_url": "index.html?launcher=true"
