@@ -2,7 +2,7 @@
   "background_color": "#0392cf",
   "theme_color": "#0392cf",
   "display": "standalone",
-  "orientation": "natural",
+  "orientation": "portrait",
   "lang": "tr-TR",
   "dir": "ltr",
   "categories": [
