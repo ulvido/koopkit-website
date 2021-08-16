@@ -44,7 +44,7 @@ self.addEventListener("activate", e => {
   e.waitUntil(validateCache());
   console.log("[Service Worker] Validate Cache Completed ✓");
   /** When a service worker is initially registered, 
-   * pages won"t use it until they next load. 
+   * pages won't use it until they next load. 
    * The claim() method causes those pages to be controlled immediately. 
    */
   e.waitUntil(self.clients.claim());
