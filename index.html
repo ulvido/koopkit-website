@@ -8,6 +8,7 @@
   <meta name="description" content="Kooperatif destek kiti. Müşteri, ürün, personel ve stok takibi.">
   <title>KoopKit</title>
   <style>
+    /* GLOBAL CSS */
     html,
     body {
       position: relative;
@@ -23,6 +24,26 @@
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       color: #333;
     }
+
+    :root {
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --gray-1000: #0e121d;
+      --kirmizi: #ee4035;
+      --turuncu: #f37736;
+      --sari: #fdf498;
+      --cream: #fefed3;
+      --yesil: #7bc043;
+      --mavi: #0392cf;
+    }
   </style>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="manifest.json">
@@ -35,21 +56,6 @@
   <noscript>
     <div>Oops! Javascript required here! Allow it and try again!</div>
   </noscript>
-
-  <script>
-    // service worker registration
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then(
-            reg => console.log("[Service Worker] Registered ✓", reg),
-            error => console.log("[Service Worker] Registration failed!", error))
-      });
-    } else {
-      console.log("[Service Worker] Service Workers NOT Supported!");
-    }
-  </script>
   <div id="app"></div>
   
 </body>
