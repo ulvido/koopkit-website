@@ -1,10 +1,9 @@
 "use strict";
 
 // cache define
-const CACHE_NAME = "sveltePWAtest-v1";
+const CACHE_NAME = "koopkit-v1";
 const FILES_TO_CACHE = [
   "favicon.png",
-  "global.css",
 ];
 
 // service worker install
