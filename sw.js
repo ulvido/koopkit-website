@@ -77,20 +77,26 @@ self.addEventListener("fetch", (e) => {
 self.addEventListener("notificationclose", e => {
   let { notification } = e;
   let primaryKey = notification.data.primaryKey;
+  let arrivalTime = notification.data.dateOfArrival;
 
-  console.log("Closed notification: " + primaryKey);
+  let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: "numeric", minute: "numeric" };
+
+  console.log("Bildirim ulaşma zamanı: ", new Date(arrivalTime).toLocaleDateString("tr-TR", options));
+  console.log("Bildirim kapandı: " + primaryKey);
 });
 
-// notification action
+// notification action butonları
 self.addEventListener("notificationclick", function (e) {
   let { notification, action } = e;
   let primaryKey = notification.data.primaryKey;
 
+
   if (action === "close") {
-    console.log("Closed tapped: " + primaryKey);
+    console.log("Kapata tıklandı: ", primaryKey);
     notification.close();
   } else {
-    clients.openWindow("http://www.example.com");
+    // clients.openWindow("http://www.example.com");
+    console.log("Bildirim tıklandı: ", primaryKey);
     notification.close();
   }
 });
