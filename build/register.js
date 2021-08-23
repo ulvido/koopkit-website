@@ -1,1 +1,0 @@
-const e=()=>{"serviceWorker"in navigator?window.addEventListener("load",(()=>{navigator.serviceWorker.register("sw.js").then((e=>console.log("[Service Worker] Registered ✓",e)),(e=>console.log("[Service Worker] Registration failed!",e)))})):console.log("[Service Worker] Service Workers NOT Supported!")};export{e as register};
