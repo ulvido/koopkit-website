@@ -1,0 +1,99 @@
+{
+  "background_color": "#0392cf",
+  "theme_color": "#0392cf",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "tr-TR",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon/maskable_icon_x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/ss1.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss2.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss3.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss4.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/ss5.png",
+      "sizes": "512x1024",
+      "type": "image/png"
+    }
+  ],
+  "name": "KoopKit",
+  "short_name": "KoopKit",
+  "description": "KoopKit ile müşteri, ürün, personel ve stok takibi artık çok kolay.",
+  "start_url": "index.html?launcher=true"
+}
