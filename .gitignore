@@ -1,0 +1,3 @@
+# for github pages
+*.js.map
+*-externs.js
