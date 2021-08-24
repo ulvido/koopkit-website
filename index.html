@@ -46,14 +46,18 @@
       --mavi: #0392cf;
     }
   </style>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <script src="/lib/firebase/8.10.0/firebase-app.js"></script>
+  <script src="/lib/firebase/8.10.0/firebase-auth.js"></script>
+  <script src="/lib/gun/0.2020.1233/gun.js"></script>
+  <script src="/lib/gun/0.2020.1233/sea.js"></script>
   <script>
     // service worker registration
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker
-          .register("sw.js")
+          .register("/sw.js")
           .then(
             reg => console.log("[Service Worker] Registered ✓", reg),
             error => console.log("[Service Worker] Registration failed!", error))
@@ -72,10 +76,6 @@
     <div>Oops! Javascript required here! Allow it and try again!</div>
   </noscript>
   <div id="app"></div>
-  <script src="/lib/firebase/8.10.0/firebase-app.js"></script>
-  <script src="/lib/firebase/8.10.0/firebase-auth.js"></script>
-  <script src="/lib/gun/0.2020.1233/gun.js"></script>
-  <script src="/lib/gun/0.2020.1233/sea.js"></script>
   
 </body>
 
